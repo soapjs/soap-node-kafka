@@ -1,0 +1,35 @@
+{
+  "name": "@soapjs/soap-node-kafka",
+  "version": "0.1.0",
+  "description": "Seamless Apache Kafka integration for SoapJS projects, facilitating clean architecture practices and streamlined messaging interactions.",
+  "homepage": "https://docs.soapjs.com",
+  "repository": "https://github.com/soapjs/soap-node-kafka",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "license": "MIT",
+  "author": "Radoslaw Kamysz",
+  "scripts": {
+    "test:unit": "jest --config=jest.config.unit.json",
+    "test:integration": "ts-node scripts/run-integration-tests.ts",
+    "test": "npm run test:unit && npm run test:integration",
+    "clean": "rm -rf ./build",
+    "build": "npm run clean && tsc --project tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^18.7.14",
+    "@web-std/file": "^3.0.3",
+    "jest": "^27.4.5",
+    "reflect-metadata": "^0.2.2",
+    "testcontainers": "^10.28.0",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "@soapjs/soap": "file:../soap/soapjs-soap-0.5.18.tgz"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

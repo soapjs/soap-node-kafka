@@ -1,0 +1,23 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "clearMocks": true,
+  "collectCoverage": false,
+  "testMatch": ["**/integration/**/*.test.ts"],
+  "testTimeout": 120000,
+  "setupFiles": ["<rootDir>/integration/setup.ts"],
+  "testPathIgnorePatterns": ["/node_modules/", "/build/", "/reference/"],
+  "verbose": true,
+  "globals": {
+    "ts-jest": {
+      "tsconfig": {
+        "target": "ES2020"
+      }
+    }
+  },
+  "testEnvironmentOptions": {
+    "node": {
+      "version": "17"
+    }
+  }
+}

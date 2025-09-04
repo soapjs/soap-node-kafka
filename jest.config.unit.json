@@ -1,0 +1,11 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "clearMocks": true,
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "coverageProvider": "v8",
+  "testMatch": ["**/__tests__/**/*.test.ts"],
+  "testPathIgnorePatterns": ["/node_modules/", "/build/", ".*integration.*"],
+  "testTimeout": 10000
+}

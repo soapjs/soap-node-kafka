@@ -1,6 +1,6 @@
 {
   "name": "@soapjs/soap-node-kafka",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Seamless Apache Kafka integration for SoapJS projects, facilitating clean architecture practices and streamlined messaging interactions.",
   "homepage": "https://docs.soapjs.com",
   "repository": "https://github.com/soapjs/soap-node-kafka",
@@ -28,7 +28,7 @@
     "typescript": "^4.8.2"
   },
   "peerDependencies": {
-    "@soapjs/soap": "^0.6.5",
+    "@soapjs/soap": "^0.7.0",
     "kafkajs": "^2.2.4"
   }
 }
